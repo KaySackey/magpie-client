@@ -1,0 +1,185 @@
+@import '../../../vendor/ceres/ceres.scss';
+
+h1.header {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 10px;
+  text-decoration: underline;
+}
+
+.chat-wrapper {
+  width: 100%;
+  min-width: 1024px;
+  margin: 50px auto 0px auto;
+  border-radius: 4px;
+  align-items: stretch;
+}
+
+
+.message-thumbnail{
+  max-height: 100px;
+  max-width: 100px;
+}
+
+/* Room List */
+.room-list {
+  width: 190px;
+  height: 625px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+ul.room-group {
+
+}
+
+li.room-name {
+  color: #A9CFE2;
+  margin: 5px 0;
+  padding: 8px;
+  list-style: none;
+  &.selected {
+    border-right: 5px solid #5D5DB7;
+    background: #3B3B3E;
+  }
+  &.current-room {
+    background: #5D5DB7;
+  }
+  &:hover {
+    background: #5D5DB7;
+  }
+}
+
+/* Main */
+.chat-room {
+  width: calc(100vw - 240px);
+  align-items: stretch;
+  border-right: 2px groove #333;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Mesages */
+.message-window {
+  vertical-align: top;
+  border-bottom: 2px groove #333;
+  width: calc(100vw - 450px);
+  height: calc(100vh - 250px);
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: left;
+  overflow-y: scroll;
+  display: inline-block;
+}
+
+.chat-message {
+  align-items: baseline;
+}
+
+ul.chat-message--body {
+  width: auto;
+  display: inline-block;
+  li {
+    list-style: none;
+  }
+}
+
+.chat-message--username {
+  width: 80px;
+  font-weight: bold;
+  color: #7b7bc9;
+  display: inline-block;
+}
+
+.chat-message--timestamp {
+  width: 100px;
+  color: gray;
+  font-size: .8rem;
+  display: inline-block;
+}
+
+/* Form */
+.chat-form {
+  width: 90%;
+  height: 100px;
+
+  input[type="text"] {
+    padding: 10px;
+    height: 20px;
+    font-size: 16px;
+    width: calc(100% - 150px);
+    margin-top: 11px;
+    &:focus {
+      border: 1px solid white;
+    }
+  }
+
+  input[type="submit"] {
+    cursor: pointer;
+    height: 40px;
+    background: #424242;
+    color: white;
+    width: 104px;
+    font-size: 18px;
+    border-radius: 3px;
+  }
+}
+
+/** User List **/
+.user-list--section{
+  width: 178px;
+  display: inline-block;
+  padding: 3px;
+  border-left: 2px groove #333;
+}
+.user-list {
+  font-size: 12px;
+  width: 178px;
+}
+
+.user-list--item {
+  list-style: none;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.user-list--name {
+  font-size: 12px;
+  position: relative;
+  top: -13px;
+}
+
+.user-list--avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #f1f1f1;
+  margin: 0 15px;
+
+  &.is-online {
+    background: #2BAED0;
+  }
+  &.is-offline {
+    background: lightgray;
+  }
+}
+
+/* Alerts */
+.notification {
+  font-size: 15px;
+  font-style: italic;
+  color: #FF530D;
+}
+
+.alert {
+  padding: 4px;
+  width: 18px;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+  background: #2BAED0;
+  display: inline-block;
+  text-align: center;
+}

@@ -1,0 +1,537 @@
+@import "./fonts/icomoon/style.scss";
+// Colors
+
+$bg-color: #262626;
+$accent-color: #212121;
+$light-gray: #3A3A3A;
+$txt-color: #C1C1C1;
+$link-color: #FF97A3;
+
+$primary-btn-bg: #923939;
+$btn-color:#EEE2E2;
+
+$pink: #FF97A3;
+$blue: #4B889D;
+$green: #70AE47;
+$yellow: #D8AF43;
+$dark-red: #923939;
+
+$faded-green: rgba(112,174,71,0.22);
+$faded-yellow:  rgba(216,175,67,0.15);
+$faded-blue: rgba(75, 136, 157, 0.13);
+$dark-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.10);
+
+$modal-overlay: rgba(33,32,32,0.98);
+$notice-color: #DDCA7E;
+
+
+$btn-small: 5px;
+$btn-size-default: 10px 25px 10px 25px;
+
+// Typography
+
+$branding: 'Karla', sans-serif;
+$branding-normal: 300;
+$branding-semi-bold: 600;
+$branding-bold: 700;
+
+ul, h1, h2, h3, h4, h5{
+ /*
+  margin: 0;
+  padding: 0;
+  line-height: 1.9;
+  */
+}
+h1{ font-size: 25px;}
+h2{ font-size: 23px;}
+h3{ font-size: 20px;}
+h4{ font-size: 16px;}
+h5{ font-size: 13px;}
+
+// Mixins
+
+/*
+  * For best practice, only use properties which affects the visuals
+  * (color, background colors, font-size),
+  * as opposed to properties affecting the box
+  * (e.g., display, height, width, position) which will affect the positioning
+  * of the element
+*/
+
+@mixin tooltip{
+  background: $light-gray
+}
+
+@mixin error-state{
+  padding: 10px;
+  color: $yellow;
+  background: $faded-yellow;
+  box-shadow: $dark-box-shadow;
+}
+
+@mixin btn{
+  color: $btn-color;
+  font-size: 14px;
+  padding: $btn-size-default;
+  border-radius: 2px;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+}
+@mixin grey-btn{
+  background: $light-gray;
+}
+@mixin form-ui{
+  background: $light-gray;
+  box-shadow: $dark-box-shadow;
+}
+.fineprint{ font-size: 11px;}
+
+
+// Form elements
+
+select{
+  @include form-ui;
+  -webkit-appearance: none;
+  color: $btn-color;
+  width: 120px;
+  border-radius: 0;
+  border: 0;
+  padding: 5px;
+  &:after{
+    content:'\e91b' ;
+    font-family: icomoon;
+  }
+}
+option{}
+label {}
+
+input{
+  @include form-ui;
+  border: 1px solid $light-gray;
+  height: auto;
+  width: auto;
+  color: $txt-color;
+  &[type="text"]{
+    width: 300px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  &.error{
+    @include error-state;
+  }
+}
+input[type="checkbox"]{
+   -webkit-appearance: none;
+  border: 1px solid $light-gray;
+  border-radius: 3px;
+  height: 25px;
+  width: 25px;
+  float: left;
+
+}
+input[type="checkbox"] + label{
+    margin: 5px 0 0 10px;
+    display: inline-block;
+  }
+input[type="checkbox"]:checked:after{
+    color: $pink;
+    content: '✓';
+    display: inline-block;
+    padding: 4px 7px;
+    transform: scale(1.4);
+    transition: 0.5s all;
+}
+
+input[type="radio"]{
+ -webkit-appearance: none;
+  background: transparent;
+  border: 2px solid $light-gray;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+input[type="radio"] + label{
+    margin: 5px 0 0 10px;
+    display: inline-block;
+  }
+input[type="radio"]:checked{
+    background: $pink;
+    border: 4px solid $light-gray;
+    transition: 0.08s all;
+}
+
+input:focus, textarea:focus{
+  background: $accent-color;
+  outline: none;
+}
+textarea{
+  min-width: 100%;
+  min-height: 135px;
+  background: $light-gray;
+  box-shadow: $dark-box-shadow;
+  border: 1px solid $light-gray;
+  padding: 10px;
+  color: $txt-color;
+  font-size: 14px;
+  display: block;
+}
+:placeholder-shown {
+  font-size: 13px;
+  opacity: 0.4;
+}
+
+// Buttons
+
+button, .btn{
+  @include btn;
+  background: $primary-btn-bg;
+  border: 1px solid transparent;
+  &:hover{
+    background: darken($primary-btn-bg, 4%);
+  }
+}
+.btn_secondary{
+  @include btn;
+  @include grey-btn;
+    border: 1px solid transparent;
+   &:hover{
+      background: darken($light-gray, 10%);
+      color: $btn-color;
+    }
+}
+.btn_tertiary{
+  @include btn;
+     border: 1px solid $light-gray;
+     color: $btn-color;
+     padding: $btn-size-default;
+    &:hover{
+      border: 1px solid $txt-color;
+      color: $txt-color;
+    }
+}
+
+.btn.small, .btn_secondary.small, .btn_tertiary.small{
+  padding: $btn-small;
+}
+.btn_disabled {
+  opacity: 0.5;
+}
+// UI ELEMENTS
+              // Tooltips
+.tooltip{
+  width: 150px;
+  background: $light-gray;
+  border-radius: 4px;
+  padding: 10px;
+  position: relative;
+  &:before{
+    content: '';
+    border: 10px solid transparent;
+    border-bottom: 10px solid #3a3a3a;
+    position: absolute;
+    top: -20px;
+  }
+}
+.tooltip_bottom{
+  width: 150px;
+  background: $light-gray;
+  border-radius: 4px;
+  padding: 10px;
+  position: relative;
+  &:before{
+    content: '';
+    border: 10px solid transparent;
+    border-top: 10px solid $light-gray;
+    position: absolute;
+    bottom: -20px;
+  }
+}
+.tooltip_right{
+  width: 150px;
+  background: $light-gray;
+  border-radius: 4px;
+  padding: 10px;
+  position: relative;
+  &:before{
+    content: '';
+    border: 10px solid transparent;
+    border-left: 10px solid $light-gray;
+    position: absolute;
+    right: -20px;
+  }
+}
+
+.tooltip_left{
+  width: 150px;
+  background: $light-gray;
+  border-radius: 4px;
+  padding: 10px;
+  position: relative;
+  &:before{
+    content: '';
+    border: 10px solid transparent;
+    border-right: 10px solid $light-gray;
+    position: absolute;
+    left: -20px;
+  }
+}
+                // Modals
+.modal_overlay{
+  background: $modal-overlay;
+  opacity: 0.9;
+  height: 100%;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+}
+
+.modal.active{
+  z-index: 1000;
+  position: relative;
+}
+
+.modal_dialog_container{
+   width: 440px;
+   min-height: 120px;
+   background: $light-gray;
+   position: relative;
+   box-shadow: $dark-box-shadow;
+
+  .title_bar, .modal_body, .modal_action_btns{
+       padding: 10px 15px 0 15px;
+  }
+  .modal_body{
+      padding-bottom: 25px;
+  }
+  .modal_action_btns{
+      padding-bottom: 15px;
+  }
+  .title_bar{
+    background: #464646;
+    height: 40px;
+
+    h3{
+      padding: 0;
+      margin: 0;
+    }
+    .icon-remove{
+      float: right;
+      margin-top: 3px;
+      font-size: 1.5em;
+    }
+    .icon-remove, .modal_title{
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+
+  .modal_action_btns{
+    float: right;
+    margin: 0 auto;
+    .btn{
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 10px;
+    }
+  }
+}
+
+
+              // Tabs
+
+.tab-ui {
+  border-bottom: 2px solid $faded-blue;
+  li {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    background: $faded-blue;
+    min-width: 120px;
+    margin-left: -2px;
+    padding: 5px;
+    cursor: pointer;
+
+    &.tab-state-default {
+      background: none;
+      border: none;
+      text-transform: capitalize;
+    }
+    &:hover, &:active {
+       background: $accent-color;
+    }
+  }
+}
+// Animations
+
+// Base
+
+header{}
+nav{}
+footer{}
+
+
+body{
+  font: normal 15px/1.5 $branding;
+  background: $bg-color;
+  color: $txt-color;
+}
+
+
+a, a:link, a:visited{
+  color: $link-color;
+  text-decoration: none;
+}
+a:hover{ text-decoration: underline;}
+a:active{}
+
+// Notices
+
+.notice{
+  background: $light-gray;
+  color: $notice-color;
+  padding: 10px;
+}
+// States
+
+.success{
+  color: $green;
+  padding: 10px;
+  background: $faded-green;
+  box-shadow: $dark-box-shadow;
+   &:before{
+    content: "\e926";
+    font-family: icomoon;
+    vertical-align: middle;
+  }
+}
+.error{
+  @include error-state;
+  &:before{
+    content: "\f02d";
+    font-family: icomoon;
+    vertical-align: middle;
+  }
+}
+.error_txt{
+  color: $yellow;
+  &:before{
+    content: "\f02d";
+    font-family: icomoon;
+    vertical-align: middle;
+  }
+}
+
+.blank_state{
+  background: $light-gray;
+  padding: 10px;
+  &:before{
+    content: "\e908";
+    font-family: icomoon;
+    vertical-align: middle;
+  }
+}
+
+// For demo purposes
+
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+.hover_state {
+  color: $link-color;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+h1.section_title{
+  font-size: 35px;
+  font-weight: 100;
+  text-decoration: underline;
+}
+.sidebar{
+  float: left;
+  width: 15%;
+  margin-top: 40px;
+  position: fixed;
+  font-size: 22px;
+  div{
+    margin: 10px 0;
+  }
+}
+.main{
+  /*width: 74%;
+  float: right;
+  vertical-align: top;
+  border-left: 1px solid $light-gray;
+  padding-left: 50px;
+  */
+}
+.white_theme{
+  textarea{
+    background: lightgray;
+    color: gray;
+  }
+}
+code{
+  padding: 5px;
+  display: block;
+}
+.btn_sizes li{
+  width: 25%;
+  margin-right: 7px;
+  display: inline-block;
+  vertical-align: top;
+}
+@keyframes heartbeat{
+  from{
+    transform: scale(1.0);
+  }
+  to{
+    color: $dark-red;
+    transform: scale(1.2);
+  }
+}
+@-webkit-keyframes heartbeat{
+  from{
+    -webkit-transform: scale(1.0);
+  }
+  to{
+     color: $dark-red;
+    -webkit-transform: scale(1.2);
+  }
+}
+
+.icon-heart, .icon-heartbeat{
+  color: $pink;
+  font-size: 2em;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px;
+  background: -webkit-linear-gradient(left,#FF98A3,rgb(255, 84, 84));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icon-heart:hover, .icon-heartbeat:hover{
+  animation: 0.7s heartbeat 3;
+  -webkit-animation: 0.7s heartbeat 3;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}
+//Helpers
+
+.center{ text-align: center;}
+.float_left{ float: left;}
+.float_right{ float: right;}
+.clear{ clear: both;}
+.inline{ display: inline-block;}
+.hidden { display: none;}
+
+.relative { position: relative;}
+
+.tooltip {
+  @include tooltip;
+}

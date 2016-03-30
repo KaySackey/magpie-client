@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Welcome to Skunkworks Chat!</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="app/css/chat.css">
+</head>
+<body>
+<div id="app">
+    Loading ....
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/bluebird/latest/bluebird.js"></script>
+<script src="jspm_packages/system.js"></script>
+<script src="../config.js"></script>
+<script>
+    Promise.config({
+        // Enables all warnings except forgotten return statements.
+        warnings: {
+            wForgottenReturn: false
+        },
+        // Enable long stack traces
+        longStackTraces: true,
+        // Enable cancellation
+        cancellation: true,
+        // Enable monitoring
+        monitoring: true
+    });
+
+    var development = true;
+
+    // System.import('chat/client/js/main');
+
+    System.import('app/js/app').then(function (app) {
+        app.start({
+            name: 'magpie.chat',
+            room_host: 'localhost:8000',
+            auth_host: 'localhost:8000'
+        });
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Kay Sackey - developer
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, ES7

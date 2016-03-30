@@ -1,0 +1,758 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?356zsd");
+  src: url("fonts/icomoon.eot?356zsd#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?356zsd") format("truetype"), url("fonts/icomoon.woff?356zsd") format("woff"), url("fonts/icomoon.svg?356zsd#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 12, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 27, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-camera:before {
+  content: "\e91c"; }
+
+/* line 30, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-video-camera:before {
+  content: "\e91e"; }
+
+/* line 33, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-time:before {
+  content: "\e914"; }
+
+/* line 36, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-angle-down:before {
+  content: "\e91b"; }
+
+/* line 39, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-tag:before {
+  content: "\e91a"; }
+
+/* line 42, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-minus:before {
+  content: "\e912"; }
+
+/* line 45, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-plus:before {
+  content: "\e913"; }
+
+/* line 48, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-arrow-up:before {
+  content: "\e910"; }
+
+/* line 51, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-plus-circle:before {
+  content: "\e915"; }
+
+/* line 54, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-delete:before {
+  content: "\e911"; }
+
+/* line 57, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-menu:before {
+  content: "\e90f"; }
+
+/* line 60, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-user-check:before {
+  content: "\e918"; }
+
+/* line 63, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-user-plus:before {
+  content: "\e919"; }
+
+/* line 66, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-download:before {
+  content: "\e90e"; }
+
+/* line 69, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-remove:before {
+  content: "\e921"; }
+
+/* line 72, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-inbox:before {
+  content: "\e91d"; }
+
+/* line 75, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-eye:before {
+  content: "\e922"; }
+
+/* line 78, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-comments:before {
+  content: "\e923"; }
+
+/* line 81, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-heartbeat:before {
+  content: "\e924"; }
+
+/* line 84, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-check:before {
+  content: "\e926"; }
+
+/* line 87, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-angle-right:before {
+  content: "\e927"; }
+
+/* line 90, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-angle-double-right:before {
+  content: "\e928"; }
+
+/* line 93, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-angle-left:before {
+  content: "\e92a"; }
+
+/* line 96, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-angle-double-left:before {
+  content: "\e92b"; }
+
+/* line 99, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-pencil:before {
+  content: "\e92c"; }
+
+/* line 102, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-reply:before {
+  content: "\89"; }
+
+/* line 105, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-arrow-right:before {
+  content: "\e603"; }
+
+/* line 108, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-alert:before {
+  content: "\f02d"; }
+
+/* line 111, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-pin:before {
+  content: "\f041"; }
+
+/* line 114, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-question:before {
+  content: "\f02c"; }
+
+/* line 117, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-star:before {
+  content: "\f02a"; }
+
+/* line 120, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-home:before {
+  content: "\e900"; }
+
+/* line 123, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-bell:before {
+  content: "\e901"; }
+
+/* line 126, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-spinner:before {
+  content: "\e902"; }
+
+/* line 129, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-cog:before {
+  content: "\e903"; }
+
+/* line 132, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-upload:before {
+  content: "\e916"; }
+
+/* line 135, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-flag:before {
+  content: "\e904"; }
+
+/* line 138, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-star-empty:before {
+  content: "\e905"; }
+
+/* line 141, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-heart:before {
+  content: "\e906"; }
+
+/* line 144, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-heart-broken:before {
+  content: "\e907"; }
+
+/* line 147, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-tongue:before {
+  content: "\e908"; }
+
+/* line 150, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-sleepy:before {
+  content: "\e909"; }
+
+/* line 153, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-frustrated:before {
+  content: "\e90a"; }
+
+/* line 156, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-info:before {
+  content: "\e917"; }
+
+/* line 159, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-play:before {
+  content: "\e90b"; }
+
+/* line 162, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-pause:before {
+  content: "\e90c"; }
+
+/* line 165, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-loop:before {
+  content: "\e90d"; }
+
+/* line 168, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-shuffle:before {
+  content: "\e920"; }
+
+/* line 171, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-user:before {
+  content: "\e971"; }
+
+/* line 174, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-rewind:before {
+  content: "\ea21"; }
+
+/* line 177, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-fast-forward:before {
+  content: "\ea22"; }
+
+/* line 180, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-previous:before {
+  content: "\ea23"; }
+
+/* line 183, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-next:before {
+  content: "\ea24"; }
+
+/* line 186, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-search:before {
+  content: "\e036"; }
+
+/* line 189, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/fonts/icomoon/style.scss */
+.icon-chevron-thin-down:before {
+  content: "\e60e"; }
+
+/* line 38, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+ul, h1, h2, h3, h4, h5 {
+  /*
+  margin: 0;
+  padding: 0;
+  line-height: 1.9;
+  */ }
+
+/* line 45, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+h1 {
+  font-size: 25px; }
+
+/* line 46, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+h2 {
+  font-size: 23px; }
+
+/* line 47, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+h3 {
+  font-size: 20px; }
+
+/* line 48, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+h4 {
+  font-size: 16px; }
+
+/* line 49, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+h5 {
+  font-size: 13px; }
+
+/*
+  * For best practice, only use properties which affects the visuals
+  * (color, background colors, font-size),
+  * as opposed to properties affecting the box
+  * (e.g., display, height, width, position) which will affect the positioning
+  * of the element
+*/
+/* line 88, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.fineprint {
+  font-size: 11px; }
+
+/* line 93, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+select {
+  background: #3A3A3A;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-appearance: none;
+  color: #EEE2E2;
+  width: 120px;
+  border-radius: 0;
+  border: 0;
+  padding: 5px; }
+  /* line 101, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  select:after {
+    content: '\e91b';
+    font-family: icomoon; }
+
+/* line 109, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+input {
+  background: #3A3A3A;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #3A3A3A;
+  height: auto;
+  width: auto;
+  color: #C1C1C1; }
+  /* line 115, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 14px; }
+  /* line 120, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  input.error {
+    padding: 10px;
+    color: #D8AF43;
+    background: rgba(216, 175, 67, 0.15);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1); }
+
+/* line 124, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  border: 1px solid #3A3A3A;
+  border-radius: 3px;
+  height: 25px;
+  width: 25px;
+  float: left; }
+
+/* line 133, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+input[type="checkbox"] + label {
+  margin: 5px 0 0 10px;
+  display: inline-block; }
+
+/* line 137, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+input[type="checkbox"]:checked:after {
+  color: #FF97A3;
+  content: '✓';
+  display: inline-block;
+  padding: 4px 7px;
+  transform: scale(1.4);
+  transition: 0.5s all; }
+
+/* line 146, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+input[type="radio"] {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 2px solid #3A3A3A;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%; }
+
+/* line 155, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+input[type="radio"] + label {
+  margin: 5px 0 0 10px;
+  display: inline-block; }
+
+/* line 159, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+input[type="radio"]:checked {
+  background: #FF97A3;
+  border: 4px solid #3A3A3A;
+  transition: 0.08s all; }
+
+/* line 165, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+input:focus, textarea:focus {
+  background: #212121;
+  outline: none; }
+
+/* line 169, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+textarea {
+  min-width: 100%;
+  min-height: 135px;
+  background: #3A3A3A;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #3A3A3A;
+  padding: 10px;
+  color: #C1C1C1;
+  font-size: 14px;
+  display: block; }
+
+/* line 180, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+:placeholder-shown {
+  font-size: 13px;
+  opacity: 0.4; }
+
+/* line 187, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+button, .btn {
+  color: #EEE2E2;
+  font-size: 14px;
+  padding: 10px 25px 10px 25px;
+  border-radius: 2px;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  background: #923939;
+  border: 1px solid transparent; }
+  /* line 191, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  button:hover, .btn:hover {
+    background: #833333; }
+
+/* line 195, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.btn_secondary {
+  color: #EEE2E2;
+  font-size: 14px;
+  padding: 10px 25px 10px 25px;
+  border-radius: 2px;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  background: #3A3A3A;
+  border: 1px solid transparent; }
+  /* line 199, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  .btn_secondary:hover {
+    background: #212121;
+    color: #EEE2E2; }
+
+/* line 204, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.btn_tertiary {
+  color: #EEE2E2;
+  font-size: 14px;
+  padding: 10px 25px 10px 25px;
+  border-radius: 2px;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  border: 1px solid #3A3A3A;
+  color: #EEE2E2;
+  padding: 10px 25px 10px 25px; }
+  /* line 209, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  .btn_tertiary:hover {
+    border: 1px solid #C1C1C1;
+    color: #C1C1C1; }
+
+/* line 215, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.btn.small, .btn_secondary.small, .btn_tertiary.small {
+  padding: 5px; }
+
+/* line 218, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.btn_disabled {
+  opacity: 0.5; }
+
+/* line 223, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.tooltip {
+  width: 150px;
+  background: #3A3A3A;
+  border-radius: 4px;
+  padding: 10px;
+  position: relative; }
+  /* line 229, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  .tooltip:before {
+    content: '';
+    border: 10px solid transparent;
+    border-bottom: 10px solid #3a3a3a;
+    position: absolute;
+    top: -20px; }
+
+/* line 237, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.tooltip_bottom {
+  width: 150px;
+  background: #3A3A3A;
+  border-radius: 4px;
+  padding: 10px;
+  position: relative; }
+  /* line 243, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  .tooltip_bottom:before {
+    content: '';
+    border: 10px solid transparent;
+    border-top: 10px solid #3A3A3A;
+    position: absolute;
+    bottom: -20px; }
+
+/* line 251, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.tooltip_right {
+  width: 150px;
+  background: #3A3A3A;
+  border-radius: 4px;
+  padding: 10px;
+  position: relative; }
+  /* line 257, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  .tooltip_right:before {
+    content: '';
+    border: 10px solid transparent;
+    border-left: 10px solid #3A3A3A;
+    position: absolute;
+    right: -20px; }
+
+/* line 266, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.tooltip_left {
+  width: 150px;
+  background: #3A3A3A;
+  border-radius: 4px;
+  padding: 10px;
+  position: relative; }
+  /* line 272, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  .tooltip_left:before {
+    content: '';
+    border: 10px solid transparent;
+    border-right: 10px solid #3A3A3A;
+    position: absolute;
+    left: -20px; }
+
+/* line 281, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.modal_overlay {
+  background: rgba(33, 32, 32, 0.98);
+  opacity: 0.9;
+  height: 100%;
+  z-index: 999;
+  position: fixed;
+  width: 100%; }
+
+/* line 290, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.modal.active {
+  z-index: 1000;
+  position: relative; }
+
+/* line 295, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.modal_dialog_container {
+  width: 440px;
+  min-height: 120px;
+  background: #3A3A3A;
+  position: relative;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1); }
+  /* line 302, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  .modal_dialog_container .title_bar, .modal_dialog_container .modal_body, .modal_dialog_container .modal_action_btns {
+    padding: 10px 15px 0 15px; }
+  /* line 305, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  .modal_dialog_container .modal_body {
+    padding-bottom: 25px; }
+  /* line 308, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  .modal_dialog_container .modal_action_btns {
+    padding-bottom: 15px; }
+  /* line 311, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  .modal_dialog_container .title_bar {
+    background: #464646;
+    height: 40px; }
+    /* line 315, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+    .modal_dialog_container .title_bar h3 {
+      padding: 0;
+      margin: 0; }
+    /* line 319, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+    .modal_dialog_container .title_bar .icon-remove {
+      float: right;
+      margin-top: 3px;
+      font-size: 1.5em; }
+    /* line 324, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+    .modal_dialog_container .title_bar .icon-remove, .modal_dialog_container .title_bar .modal_title {
+      display: inline-block;
+      vertical-align: top; }
+  /* line 331, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  .modal_dialog_container .modal_action_btns {
+    float: right;
+    margin: 0 auto; }
+    /* line 334, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+    .modal_dialog_container .modal_action_btns .btn {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 10px; }
+
+/* line 345, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.tab-ui {
+  border-bottom: 2px solid rgba(75, 136, 157, 0.13); }
+  /* line 347, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  .tab-ui li {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    background: rgba(75, 136, 157, 0.13);
+    min-width: 120px;
+    margin-left: -2px;
+    padding: 5px;
+    cursor: pointer; }
+    /* line 357, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+    .tab-ui li.tab-state-default {
+      background: none;
+      border: none;
+      text-transform: capitalize; }
+    /* line 362, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+    .tab-ui li:hover, .tab-ui li:active {
+      background: #212121; }
+
+/* line 376, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+body {
+  font: normal 15px/1.5 "Karla", sans-serif;
+  background: #262626;
+  color: #C1C1C1; }
+
+/* line 383, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+a, a:link, a:visited {
+  color: #FF97A3;
+  text-decoration: none; }
+
+/* line 387, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+a:hover {
+  text-decoration: underline; }
+
+/* line 392, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.notice {
+  background: #3A3A3A;
+  color: #DDCA7E;
+  padding: 10px; }
+
+/* line 399, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.success {
+  color: #70AE47;
+  padding: 10px;
+  background: rgba(112, 174, 71, 0.22);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1); }
+  /* line 404, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  .success:before {
+    content: "\e926";
+    font-family: icomoon;
+    vertical-align: middle; }
+
+/* line 410, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.error {
+  padding: 10px;
+  color: #D8AF43;
+  background: rgba(216, 175, 67, 0.15);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1); }
+  /* line 412, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  .error:before {
+    content: "\f02d";
+    font-family: icomoon;
+    vertical-align: middle; }
+
+/* line 418, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.error_txt {
+  color: #D8AF43; }
+  /* line 420, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  .error_txt:before {
+    content: "\f02d";
+    font-family: icomoon;
+    vertical-align: middle; }
+
+/* line 427, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.blank_state {
+  background: #3A3A3A;
+  padding: 10px; }
+  /* line 430, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  .blank_state:before {
+    content: "\e908";
+    font-family: icomoon;
+    vertical-align: middle; }
+
+/* line 439, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.container {
+  width: 960px;
+  margin: 0 auto; }
+
+/* line 443, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.hover_state {
+  color: #FF97A3;
+  text-decoration: underline;
+  cursor: pointer; }
+
+/* line 449, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+h1.section_title {
+  font-size: 35px;
+  font-weight: 100;
+  text-decoration: underline; }
+
+/* line 454, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.sidebar {
+  float: left;
+  width: 15%;
+  margin-top: 40px;
+  position: fixed;
+  font-size: 22px; }
+  /* line 460, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+  .sidebar div {
+    margin: 10px 0; }
+
+/* line 464, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.main {
+  width: 74%;
+  float: right;
+  vertical-align: top;
+  border-left: 1px solid #3A3A3A;
+  padding-left: 50px; }
+
+/* line 473, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.white_theme textarea {
+  background: lightgray;
+  color: gray; }
+
+/* line 478, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+code {
+  padding: 5px;
+  display: block; }
+
+/* line 482, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.btn_sizes li {
+  width: 25%;
+  margin-right: 7px;
+  display: inline-block;
+  vertical-align: top; }
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1); }
+  to {
+    color: #923939;
+    transform: scale(1.2); } }
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1); }
+  to {
+    color: #923939;
+    -webkit-transform: scale(1.2); } }
+
+/* line 507, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.icon-heart, .icon-heartbeat {
+  color: #FF97A3;
+  font-size: 2em;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px;
+  background: -webkit-linear-gradient(left, #FF98A3, #ff5454);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+/* line 518, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.icon-heart:hover, .icon-heartbeat:hover {
+  animation: 0.7s heartbeat 3;
+  -webkit-animation: 0.7s heartbeat 3;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease; }
+
+/* line 526, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.center {
+  text-align: center; }
+
+/* line 527, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.float_left {
+  float: left; }
+
+/* line 528, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.float_right {
+  float: right; }
+
+/* line 529, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.clear {
+  clear: both; }
+
+/* line 530, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.inline {
+  display: inline-block; }
+
+/* line 531, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.hidden {
+  display: none; }
+
+/* line 533, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.relative {
+  position: relative; }
+
+/* line 535, /Users/kay/PycharmProjects/skunkworks/client/vendor/ceres/ceres.scss */
+.tooltip {
+  background: #3A3A3A; }
+
+/*# sourceMappingURL=ceres.css.map */

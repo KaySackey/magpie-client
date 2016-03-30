@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?356zsd");
+  src: url("fonts/icomoon.eot?356zsd#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?356zsd") format("truetype"), url("fonts/icomoon.woff?356zsd") format("woff"), url("fonts/icomoon.svg?356zsd#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 12, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 27, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-camera:before {
+  content: "\e91c"; }
+
+/* line 30, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-video-camera:before {
+  content: "\e91e"; }
+
+/* line 33, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-time:before {
+  content: "\e914"; }
+
+/* line 36, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-angle-down:before {
+  content: "\e91b"; }
+
+/* line 39, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-tag:before {
+  content: "\e91a"; }
+
+/* line 42, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-minus:before {
+  content: "\e912"; }
+
+/* line 45, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-plus:before {
+  content: "\e913"; }
+
+/* line 48, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-arrow-up:before {
+  content: "\e910"; }
+
+/* line 51, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-plus-circle:before {
+  content: "\e915"; }
+
+/* line 54, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-delete:before {
+  content: "\e911"; }
+
+/* line 57, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-menu:before {
+  content: "\e90f"; }
+
+/* line 60, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-user-check:before {
+  content: "\e918"; }
+
+/* line 63, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-user-plus:before {
+  content: "\e919"; }
+
+/* line 66, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-download:before {
+  content: "\e90e"; }
+
+/* line 69, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-remove:before {
+  content: "\e921"; }
+
+/* line 72, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-inbox:before {
+  content: "\e91d"; }
+
+/* line 75, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-eye:before {
+  content: "\e922"; }
+
+/* line 78, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-comments:before {
+  content: "\e923"; }
+
+/* line 81, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-heartbeat:before {
+  content: "\e924"; }
+
+/* line 84, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-check:before {
+  content: "\e926"; }
+
+/* line 87, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-angle-right:before {
+  content: "\e927"; }
+
+/* line 90, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-angle-double-right:before {
+  content: "\e928"; }
+
+/* line 93, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-angle-left:before {
+  content: "\e92a"; }
+
+/* line 96, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-angle-double-left:before {
+  content: "\e92b"; }
+
+/* line 99, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-pencil:before {
+  content: "\e92c"; }
+
+/* line 102, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-reply:before {
+  content: "\89"; }
+
+/* line 105, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-arrow-right:before {
+  content: "\e603"; }
+
+/* line 108, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-alert:before {
+  content: "\f02d"; }
+
+/* line 111, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-pin:before {
+  content: "\f041"; }
+
+/* line 114, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-question:before {
+  content: "\f02c"; }
+
+/* line 117, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-star:before {
+  content: "\f02a"; }
+
+/* line 120, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-home:before {
+  content: "\e900"; }
+
+/* line 123, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-bell:before {
+  content: "\e901"; }
+
+/* line 126, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-spinner:before {
+  content: "\e902"; }
+
+/* line 129, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-cog:before {
+  content: "\e903"; }
+
+/* line 132, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-upload:before {
+  content: "\e916"; }
+
+/* line 135, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-flag:before {
+  content: "\e904"; }
+
+/* line 138, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-star-empty:before {
+  content: "\e905"; }
+
+/* line 141, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-heart:before {
+  content: "\e906"; }
+
+/* line 144, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-heart-broken:before {
+  content: "\e907"; }
+
+/* line 147, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-tongue:before {
+  content: "\e908"; }
+
+/* line 150, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-sleepy:before {
+  content: "\e909"; }
+
+/* line 153, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-frustrated:before {
+  content: "\e90a"; }
+
+/* line 156, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-info:before {
+  content: "\e917"; }
+
+/* line 159, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-play:before {
+  content: "\e90b"; }
+
+/* line 162, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-pause:before {
+  content: "\e90c"; }
+
+/* line 165, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-loop:before {
+  content: "\e90d"; }
+
+/* line 168, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-shuffle:before {
+  content: "\e920"; }
+
+/* line 171, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-user:before {
+  content: "\e971"; }
+
+/* line 174, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-rewind:before {
+  content: "\ea21"; }
+
+/* line 177, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-fast-forward:before {
+  content: "\ea22"; }
+
+/* line 180, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-previous:before {
+  content: "\ea23"; }
+
+/* line 183, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-next:before {
+  content: "\ea24"; }
+
+/* line 186, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-search:before {
+  content: "\e036"; }
+
+/* line 189, /Users/kay/PycharmProjects/skunkworks/client/css/ceres/fonts/icomoon/style.scss */
+.icon-chevron-thin-down:before {
+  content: "\e60e"; }
+
+/*# sourceMappingURL=style.css.map */

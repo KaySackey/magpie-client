@@ -1,0 +1,107 @@
+{
+  "name": "MagpieClient",
+  "version": "1.0.0",
+  "description": "Client for Magpie, a multiuser chat room server. Built with ES6 and React.",
+  "main": "app/js/app.js",
+  "scripts": {
+    "env": "env | grep \"^NODE\"; exit 0;",
+    "set:prod": "export NODE_ENV=production; ",
+    "set:dev": "export NODE_ENV=development; ",
+    "install": "echo \"Installation complete\" && exit 0",
+    "uninstall": "echo \"Error: no uninstall specified\" && exit 1",
+    "start": "export NODE_ENV=development; browser-sync start ---files='web/, app/' --server",
+    "start:dev": "node dev_server.js",
+    "start prod:app": "watch --beep --color --interval 1 'npm run build:app; npm run clean:npmlog' js/app/",
+    "jspm-server": "jspm-server",
+    "v:minor": "npm version minor",
+    "v:major": "npm version major",
+    "v:patch": "npm version patch",
+    "*build": "npm run build:deps && npm run build:babel && npm run build:app && npm run clean:npmlog",
+    "clean": "npm run unbundle && rm -rf dist/*  && npm run clean:npmlog && mkdir dist/tmp",
+    "clean:npmlog": "rm -f npm-debug.log*",
+    "depcache": "jspm depcache app/js/app",
+    "bundle": "echo \"Please use npm run bundle:prod or npm run bundle:dev\"",
+    "bundle:dev": "jspm bundle app/js/app dist/dev/app-full.js --inject",
+    "bundle:dev:app": "jspm bundle app/js/app - phoenix-socket - lodash - mobx - mobx-react dist/dev/app.js --inject",
+    "bundle:dev:deps": "jspm bundle phoenix-socket + lodash + mobx + mobx-react dist/dev/mobx.js --inject",
+    "bundle:dev:babel": "jspm bundle babel + babel-preset-es2015 + babel-preset-react dist/dev/babel.js --skip-source-maps --inject",
+    "bundle:dev:deps:all": "jspm bundle app/js/app - [app/**/*] dist/dev/deps-all.js --no-runtime --inject",
+    "bundle:prod": "jspm bundle app/js/app dist/app.js --minify --skip-source-maps --inject",
+    "bundle:sfx": "jspm bundle-sfx app/js/app dist/magpie-sfx.js  --skip-source-maps --no-runtime --minify",
+    "unbundle": "jspm unbundle",
+    "doc": "echo \"Error: no doc specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "readme": "echo \"Error: no readme specified\" && exit 1"
+  },
+  "keywords": [
+    "chat",
+    "experimental"
+  ],
+  "author": "Kay",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/9cloud/magpie-client.git"
+  },
+  "homepage": "",
+  "contributors": [
+    {
+      "name": "Kay",
+      "email": "kay@9cloud.us",
+      "web": ""
+    },
+    {
+      "name": "Kekeli",
+      "email": "kekeli@bolddesign.org",
+      "web": "http://kekeli.tech"
+    }
+  ],
+  "os": [
+    "linux",
+    "macos",
+    "win"
+  ],
+  "engines": [
+    "node"
+  ],
+  "directories": {
+    "lib": "app",
+    "bin": "",
+    "doc": "",
+    "example": ""
+  },
+  "bugs": {
+    "mail": "kay@9cloud.us",
+    "web": ""
+  },
+  "private": false,
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "es6-enum": "npm:es6-enum@^1.0.0",
+      "lodash": "npm:lodash@^4.5.0",
+      "mobx": "npm:mobx@^2.0.0",
+      "mobx-react": "npm:mobx-react@^3.0.0",
+      "phoenix-socket": "npm:phoenix-socket@^1.1.3",
+      "react": "npm:react@^0.14.6",
+      "react-dom": "npm:react-dom@^0.14.6",
+      "whatwg-fetch": "npm:whatwg-fetch@^0.11.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-preset-es2015": "npm:babel-preset-es2015@^6.3.13",
+      "babel-preset-react": "npm:babel-preset-react@^6.3.13",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "jspm": "^0.16.30",
+    "jspm-server": "^1.0.1",
+    "express": "^4.13.4"
+  },
+  "dependencies": {
+    "jspm": "^0.16.30"
+  }
+}
