@@ -16,6 +16,7 @@ import Auth from './actors/auth';
 import Rooms from './actors/rooms';
 import Socket from './actors/socket';
 
+import injectTapEventPlugin from 'react-tap-event-plugin';
 
 export class ChatApp extends Component {
   constructor(props) {
@@ -41,17 +42,17 @@ export class ChatApp extends Component {
 
     // State is just bare models of the above components
     this.state = {
-       user: '',
-       rooms: [],
-       current_room: null
+      user: '',
+      rooms: [],
+      current_room: null
     };
   }
 
   componentDidMount() {
     // Bootrap
     this.auth.authenticate()
-      .then(() => this.rooms.connect(this.auth.token) )
-      .then(() => this.rooms.all() )
+      .then(() => this.rooms.connect(this.auth.token))
+      .then(() => this.rooms.all())
       .then((rooms) => {
         // Join the first room available
         rooms[0].join().then((room)=> {
@@ -78,7 +79,7 @@ export class ChatApp extends Component {
     let room = tideEvent.details;
 
     // Join the first room available
-    room.join().then((data )=> {
+    room.join().then((data)=> {
       this.setState({
         current_room: room
       })
@@ -93,7 +94,7 @@ export class ChatApp extends Component {
   }
 
 
-  render_welcome(){
+  render_welcome() {
     return (
       <div className="chat-wrapper">
         <div className="main">
@@ -104,14 +105,14 @@ export class ChatApp extends Component {
   }
 
   render() {
-    if(this.state.current_room == null){
+    if (this.state.current_room == null) {
       return this.render_welcome();
     }
 
     return (
       <div className="chat-wrapper">
 
-        <RoomList rooms={this.state.rooms} current_room={this.state.current_room.model} />
+        <RoomList rooms={this.state.rooms} current_room={this.state.current_room.model}/>
 
         <ChatRoom room={this.state.current_room.model}/>
       </div>
@@ -119,23 +120,44 @@ export class ChatApp extends Component {
   }
 }
 
-export const start = function(props){
-  if('room_host' in props){
-    conf.routes.room_host = props['room_host'];
+
+export default class Home extends React.Component {
+  constructor(...props) {
+    super(...props)
   }
-  if ('auth_host' in props) {
-    conf.routes.auth_host = props['auth_host'];
+
+  render() {
+    return <div>
+      <h2>Home route</h2>
+      <p>you can try editing it as you like to test this out</p>
+
+    </div>
+  }
+}
+
+export const start = function (options) {
+  if ('room_host' in options) {
+    conf.routes.room_host = options['room_host'];
+  }
+  if ('auth_host' in options) {
+    conf.routes.auth_host = options['auth_host'];
   }
   ReactDOM.render(
-    React.createElement(ChatApp, props),
-    document.getElementById('app')
-  );
+    React.createElement(ChatApp),
+    document.getElementById('app'));
 
-  //ReactDOM.render(<ChatApp></ChatApp>, document.getElementById('app'));
+  // Needed for onTouchTap
+  // Can go away when react 1.0 release
+  // Check this repo:
+  // https://github.com/zilverline/react-tap-event-plugin
+  injectTapEventPlugin();
 };
 
+export function __reload() {
+  // force unload React components
+  ReactDOM.render(
+    React.createElement(ChatApp),
+    document.getElementById('app'));
+}
 
 export default start;
-
-
-

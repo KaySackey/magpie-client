@@ -34,17 +34,32 @@
         monitoring: true
     });
 
-    var development = true;
+    var development = location.origin.match(/localhost/);
 
-    // System.import('chat/client/js/main');
-
-    System.import('app/js/app').then(function (app) {
-        app.start({
-            name: 'magpie.chat',
-            room_host: 'localhost:8000',
-            auth_host: 'localhost:8000'
+    if (development) {
+        // Dev Server
+        System.trace = true;
+        System.import('capaj/systemjs-hot-reloader').then(function (HotReloader) {
+            new HotReloader.default('http://localhost:5776'); // chokidar-socket-emitter port
+        }).then(function(){
+            System.import('app/js/app').then(function (app) {
+                app.start({
+                    name: 'magpie.chat',
+                    room_host: 'localhost:8000',
+                    auth_host: 'localhost:8000'
+                });
+            });
         });
-    });
+    }else{
+        // Production Server
+        System.import('app/js/app').then(function (app) {
+            app.start({
+                name: 'magpie.chat',
+                room_host: 'localhost:8000',
+                auth_host: 'localhost:8000'
+            });
+        });
+    }
 </script>
 
 
