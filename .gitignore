@@ -29,6 +29,7 @@ node_modules
 jspm_packages
 dist/*
 dist/dev/*
+dist/tmp/*
 
 # Eclipse Metadata
 .metadata/
